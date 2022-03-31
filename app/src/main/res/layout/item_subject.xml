@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginVertical="8dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="2dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="1dp"
+    app:rippleColor="#33DAE9F9">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_subject_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:fontFamily="@font/regular"
+            android:lines="1"
+            android:text="Android Development"
+            android:textColor="@color/black_lite"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            app:drawableTint="@color/stroke_lite"
+            app:drawableEndCompat="@drawable/ic_arrow_right"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tv_subject_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/regular"
+            android:text="@string/subject_details"
+            android:textColor="@color/color_grey_dark"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/tv_subject_name" />
+
+        <TextView
+            android:id="@+id/tv_subject_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/regular"
+            android:text="5/10"
+            android:textColor="@color/color_text_score"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_subject_details"/>
+
+        <TextView
+            android:id="@+id/tv_dubject_tasks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/regular"
+            android:text="@string/topshiriqlar_2"
+            android:textColor="@color/color_text_score"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_subject_score" />
+
+        <com.mckrpk.animatedprogressbar.AnimatedProgressBar
+            android:id="@+id/animatedProgressBar"
+            android:layout_width="0dp"
+            android:layout_height="8dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="12dp"
+            app:animationDurationInMs="1600"
+            app:animationStyle="line"
+            app:layout_constraintBottom_toBottomOf="@id/tv_subject_score"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_subject_score"
+            app:layout_constraintTop_toTopOf="@+id/tv_subject_score"
+            app:lineWidth="6dp"
+            app:max="100"
+            app:progress="50"
+            app:progressColor="@color/color_progress"
+            app:progressTipColor="@color/color_progress"
+            app:progressTipEnabled="false"
+            app:trackColor="@color/color_progress_track" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,167 @@
+<resources>
+    <string name="app_name">Hemis</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- Introduction Fragment -->
+    <string name="harakatni_boshlash">Harakatni boshlash</string>
+    <string name="bildirishnomalar">Bildirishnomalar</string>
+    <string name="fanlar">Fanlar</string>
+    <string name="malumotlar">Ma’lumotlar</string>
+    <string name="sub_header_1">O‘zbekistondagi eng tezkor ta’lim ilovasi. Bu bepul va xavsiz.</string>
+    <string name="sub_header_2">HEMIS fanlar, uning ichidagi topshiriqlar, resurslar  va davomatni o’z ichiga oladi.</string>
+    <string name="sub_header_3">HEMIS bildirishnomalarni juda tezkor va qulay yetkazadi. </string>
+    <string name="sub_header_4">HEMIS shrtnomalar, va ma’lumotlaringizni tez va oson yuklab olsihga yordam beradi.</string>
+    <string name="image">image</string>
+
+    <!-- University Fragment -->
+    <string name="choose_univer">Oliy ta’lim muassasini tanlang</string>
+    <string name="your_univer">Oliy ta‘lim muassasangiz</string>
+    <array name="university">
+        <item>Toshkent axborot texnologiyali universiteti</item>
+        <item>Toshkent Moliya Instituti</item>
+        <item>Westminister International University In Uzbekistan</item>
+        <item>Toshkent Davlat texnika Universiteti</item>
+        <item>Inha university</item>
+    </array>
+
+    <!-- Profile Fragment -->
+    <string name="full_name">%s %s</string>
+    <string name="group_course">%s guruh %s talabasi</string>
+    <string name="kirish">Kirish</string>
+    <string name="parol">Parol</string>
+    <string name="login">Login</string>
+    <string name="yangi_parol">Yangi parol</string>
+    <string name="parol_tasdig_i">Parol tasdig\'i</string>
+    <string name="chiqish">Chiqish</string>
+    <string name="chiqish_discription">Siz rostan ham o‘z profilingizdan chiqib ketmoqchimisiz?</string>
+    <string name="tasdiqlash">Tasdiqlash</string>
+    <string name="bekor_qilish">Bekor qilish</string>
+    <string name="hours_didnt_come">%s | %d soat qoldirilgan</string>
+    <string name="student_number">Login: %s</string>
+
+    <!-- Theme dialog -->
+    <string name="day">Kunduzgi</string>
+    <string name="night">Tungi</string>
+    <string name="mavzuni_tanlang">Mavzuni tanlang</string>
+
+    <!-- Language dialog -->
+    <string name="tilni_tanlang">Tilni tanlang</string>
+    <string name="english">English</string>
+    <string name="russian">Русский</string>
+    <string name="uzbek_lat">O‘zbek</string>
+    <string name="uzbek_krl">Узбек</string>
+
+    <!-- Semester dialog -->
+    <string name="semestr">Semestr</string>
+    <string name="_1_semestr">1-semestr</string>
+    <string name="_2_semestr">2-semestr</string>
+    <string name="_3_semestr">3-semestr</string>
+    <string name="_4_semestr">4-semestr</string>
+    <string name="_5_semestr">5-semestr</string>
+    <string name="_6_semestr">6-semestr</string>
+    <string name="_7_semestr">7-semestr</string>
+    <string name="_8_semestr">8-semestr</string>
+    <string name="ma_lumotnoma_olish">Ma\'lumotnoma olish</string>
+    <string name="ma_lumot_topilmadi">Ma’lumot topilmadi</string>
+    <string name="buyutrma">Buyutrma</string>
+
+    <!-- Documents -->
+    <string name="hujjat_raqami">Hujjat raqami</string>
+    <string name="hujjat_sanasi">Hujjat sanasi</string>
+    <string name="o_quv_yili">O\'quv yili</string>
+    <string name="kurs">Kurs</string>
+    <string name="shartnoma_raqami">Shartnoma raqami</string>
+    <string name="shartnoma_turi">Shartnoma turi</string>
+    <string name="to_landi">To‘landi</string>
+    <string name="buyruq_raqami">Buyruq raqami</string>
+    <string name="buyruq_sanasi">Buyruq sanasi</string>
+    <string name="nomi">Nomi</string>
+    <string name="buyruq_turi">Buyruq turi</string>
+    <string name="yaratilgan">Yaratilgan</string>
+
+    <!--  Subjects fragment  -->
+    <string name="subject_details">%s | %s soat | %s kredit</string>
+    <string name="info">Info</string>
+    <string name="ball">Ball</string>
+    <string name="maximal_ball">Maximal ball</string>
+    <string name="natija">Natija</string>
+    <string name="absent_hours">Qoldirgan soatlari: %d</string>
+    <string name="task_count">%s / %s</string>
+    <string name="recourse_count">"Resurslar soni: %s"</string>
+    <string name="absent_count">Qoldirgan soatlari: %s</string>
+
+    <!--  Resource fragment -->
+    <string name="type_lecture">Ma\'ruza</string>
+    <string name="type_practical">Amaliy</string>
+    <string name="type_laboratory">Laboratoriya</string>
+    <string name="type_seminar">Seminar</string>
+    <string name="type_training">Trening</string>
+    <string name="type_course_work">Kurs ishi</string>
+    <string name="type_independent_education">Mustaqil ta\'lim</string>
+
+    <!--  Upload Deadline fragment  -->
+    <string name="all">Hammasi</string>
+    <string name="task_waiting">Topshirishingiz kutulmoqda</string>
+    <string name="less_than_three_days">Hafta davomida topshiriqlar</string>
+    <string name="less_than_week">%d kundan kam vaqt qoldi</string>
+    <string name="new_task">Yangi topshiriq</string>
+    <string name="task_uploaded">Topshiriq topshirildi</string>
+    <string name="task_marked">Topshiriq baholandi</string>
+    <string name="deadline_passed">Topshiriq muddati tugadi</string>
+    <string name="qo_llash">Qo\'llash</string>
+    <string name="filterni_tozalash">Filterni tozalash</string>
+    <string name="saqlash">Saqlash</string>
+    <string name="yuklangan_topshiriqlar">Yuklangan topshiriqlar</string>
+    <string name="yuklash">Yuklash</string>
+    <string name="upload_file">Fayllarni yuklash</string>
+    <string name="format_doc_pdf_pptx_zip">Format DOC, PDF,PPTX,ZIP</string>
+    <string name="file_types">Format DOC, PDF,PPTX,ZIP</string>
+    <string name="file_topilmadi">file topilmadi</string>
+    <string name="topshiriqni_yuklash">Topshiriqni yuklash</string>
+    <string name="topshiriqlar">topshiriqlar</string>
+    <string name="topshiriqlar_2">Topshiriqlar</string>
+    <string name="filter">Filter</string>
+    <string name="ball_percent">%d%s</string>
+    <string name="_0">0</string>
+
+    <!--  Calendar fragment  -->
+    <string name="calendar">Calendar</string>
+    <string name="dsh">DSH</string>
+    <string name="ssh">SSH</string>
+    <string name="chr">CHR</string>
+    <string name="pay">PAY</string>
+    <string name="ju">JU</string>
+    <string name="shn">SHN</string>
+    <string name="yak">YAK</string>
+    <string name="yanvar">yanvar</string>
+    <string name="fevral">fevral</string>
+    <string name="mart">mart</string>
+    <string name="aprel">aprel</string>
+    <string name="may">may</string>
+    <string name="iyun">iyun</string>
+    <string name="iyul">iyul</string>
+    <string name="avgust">avgust</string>
+    <string name="sentabr">sentabr</string>
+    <string name="oktabr">oktabr</string>
+    <string name="noyabr">noyabr</string>
+    <string name="dekabr">dekabr</string>
+    <string name="month_month">%s %s - %s %s</string>
+    <string name="no_schedule_at_all">Dars jadvali mavjud emas</string>
+    <string name="no_schedule">Bu kunda darslar mavjud emas</string>
+
+
+    <!--  AppInfo fragment  -->
+    <string name="icon">icon</string>
+    <string name="version">Version: 1.0.16</string>
+    <string name="hemis">Hemis</string>
+    <string name="mobil_ilova_versiyasi_1_0_1">Mobil ilova versiyasi 1.0.1</string>
+    <string name="bizni_baholang">Bizni baholang</string>
+    <string name="rate_us">Fikr mulohaza qoldiring va bizni
+        Play Marketdan baholang</string>
+    <string name="notification">Notification</string>
+
+
+
+</resources>

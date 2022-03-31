@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_main_background"
+        tools:context="com.software.hemis.presenter.schedule.ScheduleFragment">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:elevation="1dp"
+            app:elevation="1dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:menu="@menu/menu_subject_page"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:title="Dars Jadvali"
+                app:titleTextAppearance="@style/ToolbarNormalTitle" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/stroke_card"
+            android:rotation="180"
+            app:shapeAppearanceOverlay="@style/Circle"
+            app:cardElevation="0dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appbar">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_arrow_right"
+                app:tint="@color/black_lite"
+                android:contentDescription="@string/icon" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btn_week"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/stroke_card"
+            app:shapeAppearanceOverlay="@style/Circle"
+            app:cardElevation="0dp"
+            app:layout_constraintLeft_toRightOf="@id/btn_back"
+            app:layout_constraintRight_toLeftOf="@id/btn_next"
+            app:layout_constraintTop_toBottomOf="@id/appbar"
+            app:layout_constraintWidth_percent="0.55">
+
+            <TextView
+                android:id="@+id/tv_week"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="16dp"
+                android:fontFamily="@font/regular"
+                android:gravity="center"
+                android:paddingTop="2dp"
+                android:text="@string/month_month"
+                android:textColor="@color/black_lite"
+                android:textSize="14sp" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btn_next"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/stroke_card"
+            app:shapeAppearanceOverlay="@style/Circle"
+            app:cardElevation="0dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appbar">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/icon"
+                android:src="@drawable/ic_arrow_right"
+                app:tint="@color/black_lite" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:id="@+id/ll_week_name"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/btn_week">
+
+            <TextView
+                android:id="@+id/tv_dush"
+                android:layout_width="54dp"
+                android:layout_height="32dp"
+                android:fontFamily="@font/regular"
+                android:gravity="center"
+                android:paddingTop="2dp"
+                android:text="@string/dsh"
+                android:textColor="@color/black_dark"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_sesh"
+                android:layout_width="54dp"
+                android:layout_height="32dp"
+                android:fontFamily="@font/regular"
+                android:gravity="center"
+                android:paddingTop="2dp"
+                android:text="@string/ssh"
+                android:textColor="@color/black_dark"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_chor"
+                android:layout_width="54dp"
+                android:layout_height="32dp"
+                android:fontFamily="@font/regular"
+                android:gravity="center"
+                android:paddingTop="2dp"
+                android:text="@string/chr"
+                android:textColor="@color/black_dark"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_pay"
+                android:layout_width="54dp"
+                android:layout_height="32dp"
+                android:fontFamily="@font/regular"
+                android:gravity="center"
+                android:paddingTop="2dp"
+                android:text="@string/pay"
+                android:textColor="@color/black_dark"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_juma"
+                android:layout_width="54dp"
+                android:layout_height="32dp"
+                android:fontFamily="@font/regular"
+                android:gravity="center"
+                android:paddingTop="2dp"
+                android:text="@string/ju"
+                android:textColor="@color/black_dark"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_shan"
+                android:layout_width="54dp"
+                android:layout_height="32dp"
+                android:fontFamily="@font/regular"
+                android:gravity="center"
+                android:paddingTop="2dp"
+                android:text="@string/shn"
+                android:textColor="@color/black_dark"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_yak"
+                android:layout_width="54dp"
+                android:layout_height="32dp"
+                android:fontFamily="@font/regular"
+                android:gravity="center"
+                android:paddingTop="2dp"
+                android:text="@string/yak"
+                android:textColor="@color/black_dark"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/div"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/color_card_stroke"
+            app:layout_constraintTop_toBottomOf="@id/ll_week_name" />
+
+        <LinearLayout
+            android:id="@+id/ll_week_number"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/div">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_days_table"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="7"
+                tools:listitem="@layout/item_calendar_day"
+                />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_table"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="40dp"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:overScrollMode="never"
+            android:paddingBottom="?actionBarSize"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_week_number"
+            app:layout_constraintWidth_percent="0.95" />
+
+        <TextView
+            android:id="@+id/tv_no_schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_schedule"
+            android:textColor="@color/black_lite"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:layout_margin="16dp"
+            app:layout_constraintTop_toBottomOf="@id/ll_week_number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_no_schedule_at_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_schedule_at_all"
+            android:textColor="@color/black_lite"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:layout_margin="16dp"
+            app:layout_constraintTop_toBottomOf="@id/appbar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.Circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:SpinKit_Color="@color/blue_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/introductionFragment">
+
+    <fragment
+        android:id="@+id/introductionFragment"
+        android:name="com.software.hemis.presenter.auth.introduction.IntroductionFragment"
+        android:label="fragment_introduction"
+        tools:layout="@layout/fragment_introduction" />
+
+    <fragment
+        android:id="@+id/universityFragment"
+        android:name="com.software.hemis.presenter.auth.university.UniversityFragment"
+        android:label="fragment_university"
+        tools:layout="@layout/fragment_university" />
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.software.hemis.presenter.auth.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_navigation_deadline"
+            app:destination="@id/navigation_deadline"
+            app:popUpTo="@id/mobile_navigation"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_loginFragment_to_splashFragment"
+            app:destination="@id/splashFragment"
+            app:popUpTo="@id/mobile_navigation"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_deadline"
+        android:name="com.software.hemis.presenter.deadline.DeadlineFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_deadline">
+        <action
+            android:id="@+id/action_navigation_deadline_to_fragmentUploadTask"
+            app:destination="@id/fragmentUploadTask">
+            <argument
+                android:name="subjectId"
+                app:argType="integer" />
+            <argument
+                android:name="taskId"
+                app:argType="integer" />
+        </action>
+        <action
+            android:id="@+id/action_navigation_deadline_to_helpFragment"
+            app:destination="@id/helpFragment">
+            <argument
+                android:name="helpType"
+                app:argType="integer" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentUploadTask"
+        android:name="com.software.hemis.presenter.deadline.info.UploadDeadlineFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_upload_deadline">
+        <argument
+            android:name="subjectId"
+            app:argType="integer" />
+        <argument
+            android:name="taskId"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_table"
+        android:name="com.software.hemis.presenter.schedule.ScheduleFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_schedule">
+        <action
+            android:id="@+id/action_navigation_table_to_helpFragment"
+            app:destination="@id/helpFragment">
+            <argument
+                android:name="helpType"
+                app:argType="integer" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_subject"
+        android:name="com.software.hemis.presenter.subject.SubjectFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_subject">
+        <action
+            android:id="@+id/action_navigation_subject_to_gradeFragment"
+            app:destination="@id/gradeFragment"
+            app:popUpTo="@id/navigation_subject"
+            app:popUpToInclusive="false">
+            <argument
+                android:name="subjectId"
+                app:argType="integer" />
+        </action>
+        <action
+            android:id="@+id/action_navigation_subject_to_helpFragment"
+            app:destination="@id/helpFragment">
+            <argument
+                android:name="helpType"
+                app:argType="integer" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_chat"
+        android:name="com.software.hemis.presenter.chat.ChatFragment"
+        android:label="ChatFragment"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/navigation_other"
+        android:name="com.software.hemis.presenter.other.OtherFragment"
+        android:label="OtherFragment"
+        tools:layout="@layout/fragment_other" >
+        <action
+            android:id="@+id/action_otherFragment_to_universityFragment"
+            app:destination="@id/universityFragment"
+            app:popUpTo="@id/mobile_navigation"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/gradeFragment"
+        android:name="com.software.hemis.presenter.subject.grade.GradeFragment"
+        android:label="GradeFragment"
+        tools:layout="@layout/fragment_grade">
+        <action
+            android:id="@+id/action_gradeFragment_to_attendanceFragment"
+            app:destination="@id/attendanceFragment">
+            <argument
+                android:name="subjectId"
+                app:argType="integer" />
+        </action>
+        <action
+            android:id="@+id/action_gradeFragment_to_resourcesFragment"
+            app:destination="@id/resourcesFragment">
+            <argument
+                android:name="subjectId"
+                app:argType="integer" />
+        </action>
+        <argument
+            android:name="subjectId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_gradeFragment_to_helpFragment"
+            app:destination="@id/helpFragment">
+            <argument
+                android:name="helpType"
+                app:argType="integer" />
+        </action>
+
+        <action
+            android:id="@+id/action_gradeFragment_to_fragmentUploadTask"
+            app:destination="@id/fragmentUploadTask">
+            <argument
+                android:name="subjectId"
+                app:argType="integer" />
+            <argument
+                android:name="taskId"
+                app:argType="integer" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/attendanceFragment"
+        android:name="com.software.hemis.presenter.subject.grade.attendance.AttendanceFragment"
+        android:label="AttendanceFragment"
+        tools:layout="@layout/fragment_attendance" >
+        <argument
+            android:name="subjectId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.software.hemis.presenter.other.data.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.software.hemis.presenter.other.data.profile.data.EditProfileFragment"
+        android:label="EditProfileFragment"
+        tools:layout="@layout/fragment_edit_profile" />
+    <fragment
+        android:id="@+id/informationFragment"
+        android:name="com.software.hemis.presenter.other.data.information.InformationFragment"
+        android:label="InformationFragment"
+        tools:layout="@layout/fragment_information" />
+    <fragment
+        android:id="@+id/referenceFragment"
+        android:name="com.software.hemis.presenter.other.data.information.ReferenceFragment"
+        android:label="fragment_reference"
+        tools:layout="@layout/fragment_reference" />
+    <fragment
+        android:id="@+id/ordersFragment"
+        android:name="com.software.hemis.presenter.other.data.information.OrdersFragment"
+        android:label="OrdersFragment"
+        tools:layout="@layout/fragment_orders" />
+    <fragment
+        android:id="@+id/studentDocumentFragment"
+        android:name="com.software.hemis.presenter.other.data.information.StudentDocumentFragment"
+        android:label="StudentDocumentFragment"
+        tools:layout="@layout/fragment_student_document" />
+    <fragment
+        android:id="@+id/ratingNotebookFragment"
+        android:name="com.software.hemis.presenter.other.data.information.RatingNotebookFragment"
+        android:label="fragment_rating_notebook"
+        tools:layout="@layout/fragment_rating_notebook" />
+    <fragment
+        android:id="@+id/performanceFragment"
+        android:name="com.software.hemis.presenter.other.data.information.PerformanceFragment"
+        android:label="fragment_performance"
+        tools:layout="@layout/fragment_performance" />
+    <fragment
+        android:id="@+id/contractFragment"
+        android:name="com.software.hemis.presenter.other.data.information.ContractFragment"
+        android:label="fragment_contract"
+        tools:layout="@layout/fragment_contract" />
+    <fragment
+        android:id="@+id/resourcesFragment"
+        android:name="com.software.hemis.presenter.subject.grade.recources.ResourcesFragment"
+        android:label="ResourcesFragment"
+        tools:layout="@layout/fragment_resources">
+        <argument
+            android:name="subjectId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.software.hemis.presenter.help.HelpFragment"
+        android:label="HelpFragment"
+        tools:layout="@layout/fragment_help">
+        <argument
+            android:name="helpType"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/taskListFragment"
+        android:name="com.software.hemis.presenter.subject.grade.TaskListFragment"
+        android:label="TaskListFragment"
+        tools:layout="@layout/fragment_task_list"/>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.software.hemis.presenter.auth.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_navigation_deadline"
+            app:destination="@id/navigation_deadline"
+            app:popUpTo="@id/mobile_navigation"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>

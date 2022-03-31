@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_deadline"
+        android:enabled="true"
+        android:icon="@drawable/ic_deadline_red"
+        android:title="Topshiriqlar" />
+
+    <item
+        android:id="@+id/navigation_table"
+        android:enabled="true"
+        android:icon="@drawable/ic_table"
+        android:title="Dars jadvali" />
+
+    <item
+        android:id="@+id/navigation_subject"
+        android:enabled="true"
+        android:icon="@drawable/ic_subject"
+        android:title="Fanlar" />
+
+    <item
+        android:id="@+id/navigation_chat"
+        android:enabled="true"
+        android:icon="@drawable/ic_chat"
+        android:title="Chat" />
+    <item
+        android:id="@+id/navigation_other"
+        android:enabled="true"
+        android:icon="@drawable/ic_other"
+        android:title="Yana" />
+</menu>

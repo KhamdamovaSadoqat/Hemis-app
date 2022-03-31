@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.radiobutton.MaterialRadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rb_text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:button="@null"
+    android:checked="false"
+    android:drawableStart="@drawable/item_radio_button"
+    android:drawablePadding="14dp"
+    android:fontFamily="@font/regular"
+    android:text="@string/_1_semestr" />
+

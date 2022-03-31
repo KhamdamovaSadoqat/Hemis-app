@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="color_text_primary">#313033</color>
+    <color name="color_text_secondary">#605D66</color>
+    <color name="color_text_secondary_dark">#484649</color>
+    <color name="color_grey">#818181</color>
+    <color name="color_grey_dark">#49454F</color>
+    <color name="color_text_score">#027F6D</color>
+    <color name="color_progress">#00C3A5</color>
+    <color name="color_progress_track">#EAFAF7</color>
+    <color name="color_card_stroke">#E2E8F0</color>
+    <color name="color_tab_selected">#DAE9F9</color>
+    <color name="color_tab_unselected">#616A79</color>
+    <color name="color_red">#ED0000</color>
+    <color name="color_yellow">#F8D22A</color>
+    <color name="color_main_background">#F8F9FB</color>
+    <color name="color_unselected_dots">#CAC4D0</color>
+
+    <color name="black_lite">#1C2023</color>
+    <color name="black_dark">#1C1B1F</color>
+    <color name="blue_light">#007AFF</color>
+    <color name="green_light">#34C759</color>
+    <color name="stroke_lite">#787579</color>
+    <color name="grey_lite">#CAC4D0</color>
+    <color name="color_attendance">#F2F3F7</color>
+    <color name="stroke_card">#EEEFF1</color>
+    <color name="card_time">#8E8E93</color>
+    <color name="grey_dark">#5F6A7C</color>
+    <color name="color_filter">#8A95A9</color>
+    <color name="light_blue">#E8F0FD</color>
+    <color name="light_blue_darker">#6784A0</color>
+
+
+    <color name="orange">#FF9B3B</color>
+    <color name="electr">#2B48FE</color>
+    <color name="neon_blue">#5484FF</color>
+    <color name="green_fern">#70C572</color>
+    <color name="tomato">#FF6450</color>
+    <color name="purple">#864CBF</color>
+    <color name="green">#00BD00</color>
+    <color name="red">#D83025</color>
+    <color name="yellow">#F29900</color>
+
+
+
+
+</resources>
